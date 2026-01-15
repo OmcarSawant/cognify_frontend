@@ -1,0 +1,264 @@
+.settings-page {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f7fa;
+}
+
+.settings-content {
+    flex: 1;
+    margin-left: 240px;
+    padding: 32px 48px;
+    max-width: 800px;
+}
+
+.settings-header {
+    margin-bottom: 32px;
+}
+
+.settings-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.settings-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Section Styles */
+.settings-section {
+    margin-bottom: 32px;
+}
+
+.settings-section h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.settings-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Setting Items */
+.setting-item {
+    margin-bottom: 20px;
+}
+
+.setting-item:last-child {
+    margin-bottom: 0;
+}
+
+.setting-item label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.input-readonly,
+.input-editable {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-readonly {
+    background: #f5f5f5;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.input-editable:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.logout-button {
+    padding: 12px 24px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.logout-button:hover {
+    background: #c82333;
+}
+
+/* Toggle Item */
+.toggle-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-info {
+    flex: 1;
+}
+
+.toggle-info label {
+    margin-bottom: 4px;
+}
+
+.toggle-description {
+    display: block;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.3s;
+    border-radius: 28px;
+}
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch input:checked+.toggle-slider {
+    background-color: #007bff;
+}
+
+.toggle-switch input:checked+.toggle-slider:before {
+    transform: translateX(24px);
+}
+
+/* Profile Display */
+.profile-display {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.avatar-placeholder {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.profile-email {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Dark Theme Styles */
+:root.dark-theme .settings-page {
+    background: #1a1a2e;
+}
+
+:root.dark-theme .settings-content {
+    background: #1a1a2e;
+}
+
+:root.dark-theme .settings-header h1 {
+    color: #fff;
+}
+
+:root.dark-theme .settings-header p {
+    color: #aaa;
+}
+
+:root.dark-theme .settings-section h2 {
+    color: #ddd;
+}
+
+:root.dark-theme .settings-card {
+    background: #16213e;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+:root.dark-theme .setting-item label {
+    color: #ddd;
+}
+
+:root.dark-theme .input-readonly {
+    background: #0f0f23;
+    border-color: #333;
+    color: #aaa;
+}
+
+:root.dark-theme .input-editable {
+    background: #0f0f23;
+    border-color: #333;
+    color: #fff;
+}
+
+:root.dark-theme .input-editable:focus {
+    border-color: #007bff;
+}
+
+:root.dark-theme .toggle-description {
+    color: #aaa;
+}
+
+:root.dark-theme .profile-name {
+    color: #fff;
+}
+
+:root.dark-theme .profile-email {
+    color: #aaa;
+}

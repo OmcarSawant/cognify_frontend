@@ -1,0 +1,62 @@
+.metric-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  position: relative;
+  min-width: 200px;
+}
+
+.metric-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.metric-icon {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.metric-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric-title {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.metric-change {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.metric-change.positive {
+  color: #28a745;
+}
+
+.metric-change.negative {
+  color: #dc3545;
+}
+
+.metric-change.neutral {
+  color: #666;
+}
+
+.change-icon {
+  font-size: 12px;
+}
