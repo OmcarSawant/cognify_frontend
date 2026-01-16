@@ -96,7 +96,7 @@ cognify/
 
 🚀 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/cognify.git
+git clone https://github.com/OmcarSawant/cognify_frontend.git
 cd cognify
 
 2️⃣ Backend Setup
@@ -174,6 +174,13 @@ POST /chat
  Role-based prompts (system/user/assistant)
 
  Conversation history per project
+
+ Architecture and Flow 
+<img width="1440" height="900" alt="Desktop - 1" src="https://github.com/user-attachments/assets/060a06cb-495e-44d9-8cb2-40eb0a6b1282" />
+![Desktop - 2](https://github.com/user-attachments/assets/0861c09b-97bc-418c-aebe-8a722b8edbd2)
+
+
+ 
 
 👨‍💻 Author
 
